@@ -5,8 +5,10 @@ Frontend Mentor Challenge - Result Summary Component
 + This is a solution to the Product Preview Card Component challenge on Frontend Mentor.
 * Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-**Live URL :-**https://result-summary-design-component.netlify.app/
+**Live URL :-** https://result-summary-design-component.netlify.app/
 
-ScreenShots
+**ScreenShots**
 
-Desktop View
+- Desktop View
+
+- Mobile View
