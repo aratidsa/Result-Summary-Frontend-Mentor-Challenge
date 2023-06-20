@@ -1,0 +1,252 @@
+/*----------------------- CSS RESET ------------------------------*/
+
+/* --------------------  Box sizing rules -------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --------------------------Remove default margin --------------------- */
+body,h1,p
+{
+  margin: 0;
+}
+
+/* --------------------------Remove default padding --------------------- */
+*
+{
+    padding:0;
+}
+/* ----------------------- Set core root defaults ----------------------- */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------ Set core body defaults -------------------- */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* --------------------- Make images easier to work with ------------------------ */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------------------- Inherit fonts for buttons ------------------- */
+button {
+  font: inherit;
+}
+
+/* ------------ Remove all smooth scroll for people that prefer not to see them ----- */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+	 scroll-behavior: auto;
+	}
+	
+	*,
+	*::before,
+	*::after {
+	  scroll-behavior: auto !important;
+	}
+}
+
+/* ------------ Variables ----- */
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
+  width:100%;
+  height:100vh;
+  margin:0 auto;    
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 43px rgba(71, 57, 108, 0.2);
+  border-radius: 1.88rem;
+}
+
+.card{
+  height:28rem;
+  width:20rem;
+  border-radius: 1.88rem;
+}
+
+.left-card
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background: var(--Light-royal-blue);
+ background: linear-gradient(0deg, hsla(241, 81%, 54%,1) 5%,hsla(252, 100%, 67%,1)75%);
+ color:var(--Light-lavender);
+}
+
+.left-card-title
+{
+  font-size: 1.13rem;
+  margin-top:1.88rem;
+}
+
+.points-circle
+{
+  width:12rem;
+  height:12rem;
+  background:linear-gradient(0deg, rgba(74, 36, 207, 0.1) 5%, rgba(74, 36, 207, 1) 83%);
+  border-radius: 50%;
+  margin-top:1.88rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-number
+{
+  color:var(--White);
+  margin-top:2.5rem;
+  font-size: 3.75rem;  
+}
+
+.circle-numberof
+{
+  margin-top:-0.63rem;
+  opacity:0.5;
+}
+
+.card-text
+{
+  color:var(--White);
+  font-size:24px;
+}
+
+.card-content
+{
+  font-size:13px;
+  margin-left:70px;
+  margin-right:70px;
+  text-align: center;
+  margin-top:-0.63rem;
+}
+
+.right-card
+{
+  display:flex;
+  flex-direction: column;
+  margin-left:50px;
+}
+
+.right-card h3{
+  margin-top:1.88rem;
+  font-size: 1.13rem;
+}
+
+.right-card-list
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap:18px;
+
+}
+
+.card-list
+{
+  display:flex;
+  justify-content: space-evenly;
+  width: 16rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  align-items: center;
+  color:gray;
+}
+
+.card-result span
+{
+  color: black;
+  font-weight: 700;
+  margin-left:80px;
+}
+
+.logo-description
+{
+  display:flex;
+  gap: 15px;
+}
+
+.reaction-list
+{
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 10%)
+}
+
+.memory-list {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 10%)
+}
+
+.verbal-list {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 10%)
+}
+
+.visual-list {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 10%);
+}
+
+button {
+  color: white;
+  background: rgb(48, 59, 89);
+  background: linear-gradient(0deg, rgba(48, 59, 89, 1) 0%, rgba(48, 59, 89, 1) 100%);
+  border: none;
+  height: 3rem;
+  width: 16rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  transition: all 2s ease-in;
+
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(68, 51, 241, 1) 5%, rgba(103, 67, 255, 1) 62%);
+}
+
+@media screen and (max-width:600px) {
+    .card-container
+    {
+      flex-direction: column;
+      margin-top:12rem;
+           
+    }
+    .left-card{
+      width:375px;
+    }
+   
+}
