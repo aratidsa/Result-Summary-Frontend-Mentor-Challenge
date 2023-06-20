@@ -10,5 +10,9 @@ Frontend Mentor Challenge - Result Summary Component
 **ScreenShots**
 
 - Desktop View
+  ![Screenshot 2023-06-20 152309](https://github.com/aratidsa/Result-Summary-Frontend-Mentor-Challenge/assets/128802362/cd00878c-8d9f-4305-833d-3c2ab8f2f554)
 
 - Mobile View
+
+  ![image](https://github.com/aratidsa/Result-Summary-Frontend-Mentor-Challenge/assets/128802362/2097a30c-0864-4ce0-bbb3-bca596dec12c)
+
